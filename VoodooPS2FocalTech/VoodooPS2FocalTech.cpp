@@ -107,7 +107,7 @@ ApplePS2FocalTechTouchPad* ApplePS2FocalTechTouchPad::probe(IOService * provider
     if(bytes.byte0 == 0x58 && bytes.byte1 == 0x00 && bytes.byte2 == 0x05)
         success = true;
     
-    IOLog("%s :: FTE0001 ? %s\n", getName(), (success ? "yes" : "no"));
+    IOLog("%s :: FLT0101 ? %s\n", getName(), (success ? "yes" : "no"));
     
     _device = 0;
     
